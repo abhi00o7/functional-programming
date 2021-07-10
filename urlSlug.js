@@ -2,7 +2,7 @@ function urlSlug(title) {
 
     return title
             .toLowerCase()
-            .split(/\W?(.*?)\W/)
+            .split(/\W?(.*?)\W/) //RegEx selecting anything between two chars which may or may not include space 
             .filter(item => item)
             .join("-")
   
